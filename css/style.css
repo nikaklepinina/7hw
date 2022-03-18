@@ -1,0 +1,593 @@
+@font-face {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+    url('../fonts/MullerLight.woff') format('woff'),
+    url('../fonts/MullerLight.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/MullerRegular.woff') format('woff'),
+    url('../fonts/MullerRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+    url('../fonts/MullerMedium.woff') format('woff'),
+    url('../fonts/MullerMedium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+    url('../fonts/MullerBold.woff') format('woff'),
+    url('../fonts/MullerBold.woff2') format('woff2');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Muller',sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+  max-width: 100%;   /*так он не вылезает за границы блока-родителя */
+}
+
+h2  {
+    margin-left: 45px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* header */
+
+.header {
+    margin-top: 30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 40px;
+}
+
+.header-phone {
+    color: #666666;
+}
+
+.header-top-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-top-right-icon {
+    display: block;
+    background-image: url(/img/keyboard_tab.png);    
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    margin-right: 5px;
+    transform: translateY(-2px);
+    
+}
+
+.header-top-right-account {
+    color: #CC9933;
+}
+
+.header-bottom {
+    margin-top: 30px;
+    height: 70px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom-left-nav-list {
+    display: flex;
+}
+
+.nav-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.nav-link {
+    color:#666666;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.nav-item:first-child {
+    margin-left: 45px;
+}
+
+.header-btn-tour {
+    padding: 13px 20px 13px 20px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    margin-right: 40px;
+    color: #CC9933;
+
+}
+
+.header-btn-call {
+    margin-right: 45px;
+    padding: 13px 20px 13px 20px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    color: #CC9933;
+}
+
+/* special */
+
+.special {
+    margin-top: 70px;    
+}
+
+.special-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.special-list-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 23px;
+}
+
+.special-item-maldives {
+    height: 250px;
+    width: 570px;
+    margin-bottom: 23px;
+    border-radius: 15px;
+    background-image: url(/img/maldives.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.special-item-crete {
+    height: 250px;
+    width: 570px;
+    border-radius: 15px;
+    background-image: url(/img/crete.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.special-item-lux-room {
+    width: 570px;
+    height: 520px;
+    background-image: url(/img/lux-room.png);
+    border-radius: 15px;
+}
+
+.special-heading {
+    max-width: 350px;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.special-heading-large {
+    padding-left: 40px;
+    padding-top: 200px;
+    max-width: 300px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.special-price {
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 47px;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.special-more-link {
+    
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFCC66;
+}
+
+.special-more-link-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width:10px;
+    height: 16px;
+    background-image: url(/img/arrow-learn-more.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.special-price-large {
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 47px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+/* about us */
+
+.about-us {
+    margin-top: 70px;   
+}
+
+.about-us-text {
+    max-width: 900px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%
+}
+
+/* services */
+
+.services-list {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+
+
+.services-item {
+    max-width: 573px;  
+    height: 330px;  
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.services-item-link {
+    margin-left: 45px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #CC9933;
+}
+
+.services-item-link-icon {
+    display:inline-block;
+    margin-left: 5px;
+    height: 15px;
+    width: 20px;
+    background-image: url('../img/arrow-services.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(+2px);
+
+}
+
+.services-item-description {
+    margin-left: 45px;
+    margin-right: 45px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%; /* or 32px */
+    color: #000000;
+}
+
+.services-item-service {
+    margin-right: 23px;
+    margin-bottom: 23px;
+}
+
+.services-item-sauna {
+    margin-right: 23px;
+}
+
+
+.services-item-image-service {
+    margin-bottom: 26px;
+    background-image: url(/img/service.png);
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.services-item-image-rent {
+    margin-bottom: 26px;
+    background-image: url(/img/rent.png);
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.services-item-image-sauna {
+    margin-bottom: 26px;
+    background-image: url(/img/sauna.png);
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.services-item-image-parking {
+    margin-bottom: 26px;
+    background-image: url(/img/parking.png);
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* benefits */
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantages-item-one, .advantages-item-two, .advantages-item-three, .advantages-item-five, .advantages-item-six, .advantages-item-seven {
+    margin-right: 23px;
+}
+
+.advantages-item-one, .advantages-item-two, .advantages-item-three, .advantages-item-four {
+    margin-bottom: 23px;
+}
+
+.advantages-item-icon {
+    display: block;
+    margin-top: 40px;
+    margin-left: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.advantages-item {
+    width: 275px;
+    height: 275px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.advantages-item-icon-one {
+    background-image: url(/img/1-bathtub.png);
+    width: 64px;
+    height: 66px;
+}
+
+.advantages-item-icon-two {
+    background-image: url(/img/2-hanger.png);
+    width: 67px;
+    height: 66px;
+}
+
+.advantages-item-icon-three {
+    background-image: url(/img/3-heating.png);
+    width: 67px;
+    height: 66px;
+}
+
+.advantages-item-icon-four {
+    background-image: url(/img/4hotel-key.png);
+    width: 67px;
+    height: 66px;
+}
+
+.advantages-item-icon-five {
+    background-image: url(/img/5-parking.png);
+    width: 67px;
+    height: 66px;
+}
+
+.advantages-item-icon-six {
+    background-image: url(/img/6-reception.png);
+    width: 67px;
+    height: 66px;
+}
+
+.advantages-item-icon-seven {
+    background-image: url(/img/7-security-box.png);
+    width: 67px;
+    height: 66px;
+}
+
+.advantages-item-icon-eight {
+    background-image: url(/img/8-swimming-pool.png);
+    width: 64px;
+    height: 66px;
+}
+
+.advantages-item-description {
+    margin-left: 45px;
+    margin-top: 10px;
+    margin-right: 42px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+}
+
+/* accommodation */
+
+.accommodation-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.accommodation-item-margin {
+    margin-right: 23px;
+}
+
+.accommodation-item-margin-bottom {
+    margin-bottom: 23px;
+}
+
+.accommodation-item {
+    width: 374px;
+    height: 440px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.accommodation-item-price-rating {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-top: 35px;
+}
+
+.accommodation-price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.accommodation-name {
+    margin-top: 16px;
+    margin-left: 45px;
+}
+
+.accommodation-location {
+    margin-top: 16px;
+    margin-left: 45px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.accommodation-rooms-link {
+    display: block;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 45px;
+    padding: 15px 20px 15px 20px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    color: #CC9933;
+}
+
+.accommodation-item-more {
+    background-image: url(/img/all\ option.png);
+    text-align: center;
+    
+}
+
+.accommodation-item-more-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 375px;
+}
+
+.accommodation-item-more-link {
+    display: block;
+    padding:0;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.accommodation-item-more-link-icon {
+    display: inline-block;
+    margin-left: 5px;
+    height:20px;
+    width: 20px;
+    background: url(/img/arrow-right-white-svg.svg) center center no-repeat transparent;    
+    background-size: contain;
+    transform: translateY(-1px);
+    
+}
+
+
+
+
+
+
+
